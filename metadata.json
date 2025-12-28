@@ -1,0 +1,7 @@
+{
+  "name": "Cute Tic-Tac-Toe Battle",
+  "description": "A colorful, real-time multiplayer Tic-Tac-Toe game for kids with cute animations and sound effects, powered by Firebase.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
