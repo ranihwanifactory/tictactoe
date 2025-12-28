@@ -6,6 +6,18 @@ export interface UserProfile {
   email: string | null;
 }
 
+export interface UserStats extends UserProfile {
+  wins: number;
+  losses: number;
+  draws: number;
+  totalGames: number;
+}
+
+export interface MatchupRecord {
+  [uid: string]: number | undefined;
+  draws: number;
+}
+
 export type CellValue = 'X' | 'O' | '';
 
 export interface GameRoom {

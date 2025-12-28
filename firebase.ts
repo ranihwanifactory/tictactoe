@@ -1,6 +1,13 @@
 
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { 
+  getAuth, 
+  GoogleAuthProvider, 
+  signInWithPopup, 
+  createUserWithEmailAndPassword, 
+  signInWithEmailAndPassword,
+  updateProfile
+} from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
@@ -27,3 +34,5 @@ export const signInWithGoogle = async () => {
     throw error;
   }
 };
+
+export { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile };
