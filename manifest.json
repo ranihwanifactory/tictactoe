@@ -1,0 +1,23 @@
+
+{
+  "name": "말랑 오목 - 실시간 친구 대결",
+  "short_name": "말랑 오목",
+  "description": "귀여운 캐릭터와 함께 즐기는 실시간 오목 대결 게임",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FFF9E6",
+  "theme_color": "#FF6B6B",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://api.dicebear.com/7.x/bottts/png?seed=MalrangOmok&size=192&backgroundColor=ffadad",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://api.dicebear.com/7.x/bottts/png?seed=MalrangOmok&size=512&backgroundColor=ffadad",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
