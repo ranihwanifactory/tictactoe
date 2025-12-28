@@ -16,9 +16,9 @@ const AuthView: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-[#FFF9E6]">
       <div className="bg-white p-8 rounded-3xl shadow-xl border-4 border-yellow-300 max-w-sm w-full text-center">
-        <div className="text-6xl mb-4">🎮</div>
-        <h1 className="text-4xl font-bold text-pink-500 mb-2">말랑 틱택토</h1>
-        <p className="text-gray-600 mb-8">친구와 함께 즐거운 대결!</p>
+        <div className="text-6xl mb-4">🐾</div>
+        <h1 className="text-4xl font-bold text-pink-500 mb-2">말랑 오목</h1>
+        <p className="text-gray-600 mb-8">친구와 함께 5개를 먼저 완성해요!</p>
         
         <button
           onClick={handleLogin}
@@ -31,7 +31,7 @@ const AuthView: React.FC = () => {
         <div className="mt-8 grid grid-cols-3 gap-2 opacity-50">
           <div className="text-4xl">🐱</div>
           <div className="text-4xl">🐰</div>
-          <div className="text-4xl">🐻</div>
+          <div className="text-4xl">⭐</div>
         </div>
       </div>
     </div>

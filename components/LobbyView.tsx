@@ -20,10 +20,11 @@ const LobbyView: React.FC<LobbyViewProps> = ({ user }) => {
 
     if (!roomId) return;
 
+    // 오목은 10x10 보드 (100칸)로 설정
     const newRoom: GameRoom = {
       id: roomId,
       host: user,
-      board: Array(9).fill(''),
+      board: Array(100).fill(''),
       currentTurn: user.uid,
       status: 'waiting',
       winner: null,
@@ -51,24 +52,24 @@ const LobbyView: React.FC<LobbyViewProps> = ({ user }) => {
             className="w-16 h-16 rounded-full border-2 border-pink-400"
           />
           <div>
-            <p className="text-gray-500 text-sm">반가워요!</p>
+            <p className="text-gray-500 text-sm">오목 고수 등장!</p>
             <p className="text-xl font-bold text-pink-600">{user.displayName}님</p>
           </div>
         </div>
 
         <div className="bg-white p-6 rounded-3xl shadow-xl border-4 border-blue-200 space-y-6">
-          <h2 className="text-2xl font-bold text-blue-500 text-center">어떻게 할까요?</h2>
+          <h2 className="text-2xl font-bold text-blue-500 text-center">오목 대결 준비?</h2>
           
           <button
             onClick={createRoom}
             className="cute-button w-full bg-blue-400 hover:bg-blue-500 text-white font-bold py-6 rounded-2xl shadow-lg border-b-4 border-blue-600 text-xl"
           >
-            🏰 새로운 방 만들기
+            🏰 새로운 대결 방 만들기
           </button>
 
           <div className="relative">
             <div className="absolute inset-0 flex items-center"><span className="w-full border-t border-gray-200"></span></div>
-            <div className="relative flex justify-center text-sm"><span className="px-2 bg-white text-gray-500 italic">혹시 초대받으셨나요?</span></div>
+            <div className="relative flex justify-center text-sm"><span className="px-2 bg-white text-gray-500 italic">초대 코드가 있나요?</span></div>
           </div>
 
           <div className="space-y-3">
@@ -83,7 +84,7 @@ const LobbyView: React.FC<LobbyViewProps> = ({ user }) => {
               onClick={joinRoom}
               className="cute-button w-full bg-pink-400 hover:bg-pink-500 text-white font-bold py-4 rounded-2xl shadow-lg border-b-4 border-pink-600"
             >
-              🚀 방으로 입장하기
+              🚀 대결 입장하기
             </button>
           </div>
         </div>
